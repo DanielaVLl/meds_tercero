@@ -83,7 +83,7 @@ class Player(BasePlayer):
     natural = models.IntegerField(choices=[[0, 'Sí'], [1, 'No']], label='¿Prefieres optar por soluciones naturales en vez de consumir medicamentos (químicos)?',
                                   widget=widgets.RadioSelect)
     natural_caso = models.IntegerField(choices=[[1, 'Siempre'], [2, 'Malestares medianamente fuertes'], [3, 'Solo en malestares simples']], label='Si marcaste sí en la pregunta anterior: ¿En qué casos?',
-                                  widget=widgets.RadioSelect)
+                                  widget=widgets.RadioSelect, blank=True)
     respirat_c = models.IntegerField(choices=[[0, 'Muy poco probable'], [1, 'Poco probable'], [2, 'Muy probable']], label='¿Qué tan probable crees que es que te de alguna enfermedad relacionada al sistema respiratorio?', widget=widgets.RadioSelect)
     digestiv_c = models.IntegerField(choices=[[0, 'Muy poco probable'], [1, 'Poco probable'], [2, 'Muy probable']], label='¿Qué tan probable crees que es que te de alguna enfermedad relacionada al sistema digestivo?', widget=widgets.RadioSelect)
     covid_c = models.IntegerField(choices=[[0, 'Muy poco probable'], [1, 'Poco probable'], [2, 'Muy probable']], label='¿Qué tan probable crees que es contagiarte de COVID-19?', widget=widgets.RadioSelect)
