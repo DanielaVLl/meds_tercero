@@ -63,7 +63,7 @@ class Player(BasePlayer):
                                            [26, 'Punta Hermosa'], [27, 'Punta Negra'], [28, 'Rímac'], [29, 'San Bartolo'], [30, 'San Borja'],
                                            [31, 'San Isidro'], [32, 'San Juan de Lurigancho'], [33, 'San Juan de Miraflores'], [34, 'San Luis'], [35, 'San Martín de Porres'],
                                            [36, 'San Miguel'], [37, 'Santa Anita'], [38, 'Santa María'], [39, 'Santa Rosa'], [40, 'Surco'],
-                                           [41, 'Surquillo'], [42, 'Villa el Salvador'], [43, 'Villa María del Triunfo']], label='Distrito de residencia')
+                                           [41, 'Surquillo'], [42, 'Villa el Salvador'], [43, 'Villa María del Triunfo'], [44, 'Callao']], label='Distrito de residencia')
     ciclo = models.IntegerField(choices=[[1, '1'], [2, '2'], [3, '3'], [4, '4'], [5, '5'], [6, '6'],
                                          [7, '7'], [8, '8'], [9, '9'], [10, '10'], [11, '11'], [12, '12']], label='Último ciclo cursado')
     cronica = models.IntegerField(choices=[[0, 'Sí'], [1, 'No'], [2, 'No deseo dar esa información']], label='¿Sufre de alguna enfermedad crónica?', widget=widgets.RadioSelect)
